@@ -25,6 +25,9 @@ public class EventosModel {
 
 
 
+    public EventosModel() {
+    }
+
     public Integer getId_evento() {
         return id_evento;
     }
@@ -76,5 +79,11 @@ public class EventosModel {
     @Override
     public int hashCode() {
         return Objects.hash(id_evento);
+    }
+
+    @Override
+    public String toString() {
+        return "EventosModel [descripcion=" + descripcion + ", id_evento=" + id_evento + ", mes=" + mes + ", nombre="
+                + nombre + ", username=" + username + "]";
     }
 }
