@@ -25,6 +25,21 @@ public class EventosModel {
 
 
 
+    public EventosModel(String username, String nombre, String descripcion, String mes) {
+        this.username = username;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.mes = mes;
+    }
+
+    public EventosModel(Integer id_evento, String username, String nombre, String descripcion, String mes) {
+        this.id_evento = id_evento;
+        this.username = username;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.mes = mes;
+    }
+
     public EventosModel() {
     }
 

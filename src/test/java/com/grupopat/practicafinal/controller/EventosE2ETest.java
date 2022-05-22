@@ -49,4 +49,34 @@ public class EventosE2ETest {
         then(result.getBody()).isEqualTo(response);
 
     }
+
+    @Test
+    public void eventoPostTest(){
+        EventosModel evento = new EventosModel();
+        
+        evento.setUsername("user1");
+        evento.setNombre("fiesta");
+        evento.setDescripcion("planazo");
+        evento.setMes("agosto");
+        
+        String url = "http://localhost:" + Integer.toString(port) + "/api/v1/eventos";
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Authorization", "Basic dXNlcjE6MTIz");
+
+        HttpEntity<EventosModel> entity = new HttpEntity<>(evento,headers);
+
+        ResponseEntity<EventosModel> result = restTemplate.exchange(
+            url,
+            HttpMethod.POST,
+            entity,
+            new ParameterizedTypeReference<EventosModel>(){}
+        );
+
+        then(result.getStatusCode()).isEqualTo(HttpStatus.OK);
+    }
+
 }
+
+
+
+
