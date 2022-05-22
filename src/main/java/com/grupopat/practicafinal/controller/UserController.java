@@ -22,8 +22,6 @@ public class UserController {
     UserService userService;
   
    
-
-  
     @GetMapping("/users")
     public ResponseEntity<Iterable<UserModel>> retrieveAll(@AuthenticationPrincipal User user){
         System.out.println(user.getUsername());
