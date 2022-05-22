@@ -10,7 +10,6 @@ import org.springframework.http.*;
 
 
 import com.grupopat.practicafinal.model.EventosModel;
-import com.grupopat.practicafinal.repository.UserRepository;
 import com.grupopat.practicafinal.service.EventosService;
 
 import static org.assertj.core.api.BDDAssertions.then;
@@ -23,8 +22,7 @@ public class EventosE2ETest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Autowired
-    private UserRepository userRepository;
+    
 
     @Autowired
     private EventosService eventosService; 

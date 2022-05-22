@@ -8,14 +8,10 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 
-import java.util.List;
 
-import com.grupopat.practicafinal.model.EventosModel;
 import com.grupopat.practicafinal.model.GastoModel;
-import com.grupopat.practicafinal.model.UserModel;
-import com.grupopat.practicafinal.repository.GastoRepository;
-import com.grupopat.practicafinal.repository.UserRepository;
-import com.grupopat.practicafinal.service.EventosService;
+
+
 import com.grupopat.practicafinal.service.GastoService;
 
 import static org.assertj.core.api.BDDAssertions.then;
@@ -27,9 +23,6 @@ public class GastosE2ETest {
 
     @Autowired
     private TestRestTemplate restTemplate;
-
-    @Autowired
-    private GastoRepository gastoRepository;
 
     @Autowired
     private GastoService gastoService; 
