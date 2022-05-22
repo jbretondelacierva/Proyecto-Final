@@ -8,10 +8,8 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 
-import java.util.List;
 
 import com.grupopat.practicafinal.model.EventosModel;
-import com.grupopat.practicafinal.model.UserModel;
 import com.grupopat.practicafinal.repository.UserRepository;
 import com.grupopat.practicafinal.service.EventosService;
 

@@ -35,7 +35,7 @@ public class GastosE2ETest {
     private GastoService gastoService; 
 
     @Test
-    public void getEventosByUser(){
+    public void getGastosByPeriodo(){
         
         Iterable<GastoModel> response = gastoService.getGastosByPeriodo("Verano","user1");
         String url = "http://localhost:" + Integer.toString(port) + "/api/v1/gastos/periodo/Verano/user1";
