@@ -10,7 +10,7 @@ Para inciar sesión hay tres usuaurios:
 
 breton88 y contraseña 66666;
 
-ines21 y contraseña 12345;
+user1 y contraseña 123;
 
 beatriz24 y contraseña 45678;
 
