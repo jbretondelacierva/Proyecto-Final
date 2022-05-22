@@ -18,7 +18,7 @@ import com.grupopat.practicafinal.service.EventosService;
 import static org.assertj.core.api.BDDAssertions.then;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UserE2ETest {
+public class EventosE2ETest {
     @LocalServerPort
     private int port;
 
@@ -32,7 +32,7 @@ public class UserE2ETest {
     private EventosService eventosService; 
 
     @Test
-    public void getUserByUsername(){
+    public void getEventosByUser(){
         
         Iterable<EventosModel> response = eventosService.getEventosByUser("user1");
         String url = "http://localhost:" + Integer.toString(port) + "/api/v1/eventos/user1";
